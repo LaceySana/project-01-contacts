@@ -1,0 +1,13 @@
+//***********GET ROUTES************
+
+//GET ALL CONTACTS
+### Render
+GET https://project-01-contacts.onrender.com/contacts/
+### Local Host
+GET http://localhost:9000/contacts/
+
+//GET ONE CONTACT
+### Render
+GET https://project-01-contacts.onrender.com/contacts/69acad76214c70d30014c7f3
+### Local Host
+GET http://localhost:9000/contacts/69acad76214c70d30014c7f3

@@ -11,3 +11,57 @@ GET http://localhost:9000/contacts/
 GET https://project-01-contacts.onrender.com/contacts/69acad76214c70d30014c7f3
 ### Local Host
 GET http://localhost:9000/contacts/69acad76214c70d30014c7f3
+
+//***********POST ROUTES************
+// CREATE CONTACT
+### Render
+POST https://project-01-contacts.onrender.com/contacts/
+Content-Type: application/json
+
+{
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "janedoe@email.com",
+    "favoriteColor": "Rainbow",
+    "birthday": "01-31-2000"
+}
+### Local Host
+POST http://localhost:9000/contacts/
+Content-Type: application/json
+
+{
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "janedoe@email.com",
+    "favoriteColor": "Rainbow",
+    "birthday": "01-31-2000"
+}
+
+//***********PUT ROUTES************
+// UPDATE CONTACT
+### Render
+PUT https://project-01-contacts.onrender.com/contacts/69b20c437bf72f16d99b5515
+Content-Type: application/json
+
+{
+    "lastName": "Joe",
+    "favoriteColor": "Grey"
+}
+### Local Host
+PUT http://localhost:9000/contacts/69b20c437bf72f16d99b5515
+Content-Type: application/json
+
+{
+    "lastName": "Joe",
+    "favoriteColor": "Grey"
+}
+
+//***********DELETE ROUTES************
+//DELETE ONE CONTACT
+### Render
+DELETE https://project-01-contacts.onrender.com/contacts/69b1ee2bd31deb25fdfdfbfc
+### Local Host
+DELETE http://localhost:9000/contacts/69b1ee2bd31deb25fdfdfbfc
+
+
+

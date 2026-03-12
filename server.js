@@ -4,8 +4,12 @@ const app = express();
 require('dotenv').config();
 const mongodb = require('./database/contacts');
 const contactsRoute = require('./routes/contacts');
+const bodyParser = require('body-parser');
 
 const port = process.env.PORT || 9000;
+
+app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.use('/', require('./routes'));
 app.use('/contacts', contactsRoute);

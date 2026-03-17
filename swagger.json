@@ -10,10 +10,13 @@
   "schemes": [
     "http"
   ],
+  "produces": [
+    "application/json"
+  ],
   "paths": {
     "/contacts/": {
       "get": {
-        "description": "",
+        "description": "Find all contacts",
         "responses": {
           "200": {
             "description": "OK"
@@ -21,7 +24,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Add new contact",
         "produces": [
           "application/json"
         ],
@@ -33,21 +36,31 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "Jane"
                 },
                 "lastName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "Doe"
                 },
                 "email": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "janedoe@email.com"
                 },
                 "favoriteColor": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "red"
                 },
                 "birthday": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "01-31-2000"
                 }
-              }
+              },
+              "required": [
+                "firstName",
+                "lastName",
+                "email"
+              ]
             }
           }
         ],
@@ -60,7 +73,7 @@
     },
     "/contacts/{id}": {
       "get": {
-        "description": "",
+        "description": "Find contact by id",
         "parameters": [
           {
             "name": "id",
@@ -76,7 +89,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update contact by id",
         "produces": [
           "application/json"
         ],
@@ -94,19 +107,24 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "Jane"
                 },
                 "lastName": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "Doe"
                 },
                 "email": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "janedoe@email.com"
                 },
                 "favoriteColor": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "red"
                 },
                 "birthday": {
-                  "example": "any"
+                  "type": "string",
+                  "example": "01-31-2000"
                 }
               }
             }
@@ -122,7 +140,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete contact by id",
         "produces": [
           "application/json"
         ],

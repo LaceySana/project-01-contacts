@@ -36,6 +36,7 @@
         "globals": "^17.4.0",
         "nodemon": "^3.1.14",
         "prettier": "3.8.1",
-        "swagger-autogen": "^2.23.7"
+        "swagger-autogen": "^2.23.7",
+        "swagger-ui-express": "^5.0.1"
     }
 }

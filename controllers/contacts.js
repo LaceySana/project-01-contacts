@@ -3,6 +3,7 @@ console.log(mongodb);
 const objectId = require('mongodb').ObjectId;
 
 const getAllContacts = async (req, res) => {
+    /* #swagger.description = 'Find all contacts' */
     const result = await mongodb.getDatabase().db().collection('contacts').find();
     result.toArray().then((contacts) => {
         res.setHeader('Contact-Type', 'application/json');
@@ -11,6 +12,7 @@ const getAllContacts = async (req, res) => {
 };
 
 const getContactById = async (req, res) => {
+    /* #swagger.description = 'Find contact by id' */
     const contactId = new objectId(req.params.id);
     const result = await mongodb.getDatabase().db().collection('contacts').find({ _id: contactId });
     result.toArray().then((contacts) => {
@@ -20,6 +22,17 @@ const getContactById = async (req, res) => {
 };
 
 const createContact = async (req, res) => {
+    /* #swagger.description = 'Add new contact' */
+    /* #swagger.parameters['body'] = {
+        in: 'body',
+        schema: {
+            $firstName: 'Jane',
+            $lastName: 'Doe',
+            $email: 'janedoe@email.com',
+            favoriteColor: 'red',
+            birthday: '01-31-2000'
+        }
+    } */
     const { firstName, lastName, email, favoriteColor, birthday } = req.body;
     const result = await mongodb.getDatabase().db().collection('contacts').insertOne({
         firstName: firstName,
@@ -33,6 +46,17 @@ const createContact = async (req, res) => {
 };
 
 const updateContact = async (req, res) => {
+    /* #swagger.description = 'Update contact by id' */
+    /* #swagger.parameters['body'] = {
+        in: 'body',
+        schema: {
+            firstName: 'Jane',
+            lastName: 'Doe',
+            email: 'janedoe@email.com',
+            favoriteColor: 'red',
+            birthday: '01-31-2000'
+        }
+    } */
     const contactId = new objectId(req.params.id);
     const update = {
         ...(req.body.firstName && { firstName: req.body.firstName }),
@@ -56,6 +80,7 @@ const updateContact = async (req, res) => {
 };
 
 const deleteContact = async (req, res) => {
+    /* #swagger.description = 'Delete contact by id' */
     const contactId = new objectId(req.params.id);
     const result = await mongodb
         .getDatabase()

@@ -6,6 +6,7 @@ const doc = {
         description: 'Read, store, edit, or delete contact information.'
     },
     host: 'project-01-contacts.onrender.com',
+    schemes: ['https'],
     produces: ['application/json']
 };
 

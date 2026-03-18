@@ -3,18 +3,17 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const mongodb = require('./database/contacts');
-const contactsRoute = require('./routes/contacts');
-const swaggerRoute = require('./routes/swagger');
 const bodyParser = require('body-parser');
 
 const port = process.env.PORT || 9000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+});
 app.use('/', require('./routes'));
-app.use('/contacts', contactsRoute);
-app.use('/api-docs', swaggerRoute);
 
 mongodb.initDb((err) => {
     if (err) {

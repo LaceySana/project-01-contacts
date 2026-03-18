@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "69acad76214c70d30014c7f3"
+  },
+  "firstName": "Lacey",
+  "lastName": "Sanabria",
+  "email": "lsanabria@byupathway.edu",
+  "favoriteColor": "purple",
+  "birthday": "09-12-2003"
+},
+{
+  "_id": {
+    "$oid": "69acada0214c70d30014c7f5"
+  },
+  "firstName": "Trennan",
+  "lastName": "Ward",
+  "email": "trennan@gmail.com",
+  "favoriteColor": "green",
+  "birthday": "04-08-2004"
+},
+{
+  "_id": {
+    "$oid": "69acade3214c70d30014c7f7"
+  },
+  "firstName": "Lucy",
+  "lastName": "Sanabria",
+  "email": "lucy@gmail.com",
+  "favoriteColor": "sky-blue",
+  "birthday": "07-24-1968"
+},
+{
+  "_id": {
+    "$oid": "69b1ec801a75794de2de3de2"
+  },
+  "firstName": "Johnny",
+  "lastName": "Sanabria",
+  "email": "johnnys@outlook.com",
+  "favoriteColor": "black",
+  "birthday": "09-23-1996"
+},
+{
+  "_id": {
+    "$oid": "69b20c437bf72f16d99b5515"
+  },
+  "firstName": "Jane",
+  "lastName": "Joe",
+  "email": "janedoe@email.com",
+  "favoriteColor": "Grey",
+  "birthday": "01-31-2000"
+}]

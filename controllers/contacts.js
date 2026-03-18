@@ -26,9 +26,9 @@ const createContact = async (req, res) => {
     /* #swagger.parameters['body'] = {
         in: 'body',
         schema: {
-            $firstName: 'Jane',
+            $firstName: 'Jhon',
             $lastName: 'Doe',
-            $email: 'janedoe@email.com',
+            $email: 'jhondoe@email.com',
             favoriteColor: 'red',
             birthday: '01-31-2000'
         }
@@ -50,9 +50,9 @@ const updateContact = async (req, res) => {
     /* #swagger.parameters['body'] = {
         in: 'body',
         schema: {
-            firstName: 'Jane',
+            firstName: 'Jhon',
             lastName: 'Doe',
-            email: 'janedoe@email.com',
+            email: 'jhondoe@email.com',
             favoriteColor: 'red',
             birthday: '01-31-2000'
         }

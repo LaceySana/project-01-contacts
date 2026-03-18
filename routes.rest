@@ -19,9 +19,9 @@ POST https://project-01-contacts.onrender.com/contacts/
 Content-Type: application/json
 
 {
-    "firstName": "Jane",
+    "firstName": "Jhon",
     "lastName": "Doe",
-    "email": "janedoe@email.com",
+    "email": "jhondoe@email.com",
     "favoriteColor": "Rainbow",
     "birthday": "01-31-2000"
 }
@@ -30,9 +30,9 @@ POST http://localhost:9000/contacts/
 Content-Type: application/json
 
 {
-    "firstName": "Jane",
+    "firstName": "Jhon",
     "lastName": "Doe",
-    "email": "janedoe@email.com",
+    "email": "jhondoe@email.com",
     "favoriteColor": "Rainbow",
     "birthday": "01-31-2000"
 }

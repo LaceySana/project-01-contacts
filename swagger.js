@@ -5,7 +5,7 @@ const doc = {
         title: 'Contacts API',
         description: 'Read, store, edit, or delete contact information.'
     },
-    host: 'localhost:9000',
+    host: 'project-01-contacts.onrender.com',
     produces: ['application/json']
 };
 

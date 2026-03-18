@@ -3,7 +3,7 @@ const router = require('express').Router();
 // eslint-disable-next-line no-unused-vars
 router.use('/api-docs', (req, res) => {
     // #swagger.ignore = true
-    require('./swagger');
+    return require('./swagger');
 });
 router.use('/contacts', require('./contacts'));
 

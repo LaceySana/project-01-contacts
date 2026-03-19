@@ -40,12 +40,11 @@ Content-Type: application/json
 //***********PUT ROUTES************
 // UPDATE CONTACT
 ### Render
-PUT https://project-01-contacts.onrender.com/contacts/69b20c437bf72f16d99b5515
+PUT https://project-01-contacts.onrender.com/contacts/69acad76214c70d30014c7f3
 Content-Type: application/json
 
 {
-    "lastName": "Joe",
-    "favoriteColor": "Grey"
+    "favoriteColor": "red"
 }
 ### Local Host
 PUT http://localhost:9000/contacts/69b20c437bf72f16d99b5515

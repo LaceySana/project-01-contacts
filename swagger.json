@@ -5,10 +5,10 @@
     "description": "Read, store, edit, or delete contact information.",
     "version": "1.0.0"
   },
-  "host": "localhost:9000",
+  "host": "project-01-contacts.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {

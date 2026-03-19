@@ -47,4 +47,14 @@
   "email": "janedoe@email.com",
   "favoriteColor": "Grey",
   "birthday": "01-31-2000"
+},
+{
+  "_id": {
+    "$oid": "69bc289a1ca287304ccda76f"
+  },
+  "firstName": "Marci",
+  "lastName": "Ward",
+  "email": "marciward@gmail.com",
+  "favoriteColor": "yellow",
+  "birthday": "03-10-1980"
 }]
